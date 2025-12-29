@@ -1,7 +1,7 @@
-import { Button } from "../Button";
-import { SectionContainer } from "../SectionContainer";
+import { Button } from "@/components/ui/Button";
+import { SectionContainer } from "@/components/ui/SectionContainer";
 
-export function CallToAction() {
+export function CallToActionSection() {
   return (
     <SectionContainer
       id="cta"
@@ -14,7 +14,10 @@ export function CallToAction() {
         <h3 className="display-font text-4xl leading-[0.95] text-[color:var(--color-ink)] sm:text-5xl lg:text-6xl">
           Join the Primal Tribe Today!
         </h3>
-        <Button className="mt-4 bg-white px-5 py-3 text-xs font-semibold uppercase tracking-[0.7px] hover:bg-white/90">
+        <Button
+          href="/about#reserve"
+          className="mt-4 bg-white px-5 py-3 text-xs font-semibold uppercase tracking-[0.7px] hover:bg-white/90"
+        >
           Reserve your spot
         </Button>
       </div>

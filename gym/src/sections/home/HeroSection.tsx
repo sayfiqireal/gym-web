@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { Button } from "../Button";
-import { SectionContainer } from "../SectionContainer";
+import { Button } from "@/components/ui/Button";
+import { SectionContainer } from "@/components/ui/SectionContainer";
 
 const heroImage =
   "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&q=80";
 
-export function Hero() {
+export function HeroSection() {
   return (
     <SectionContainer id="home" className="py-10 sm:py-12">
       <div className="flex flex-col gap-6 border border-black/15 bg-white">
@@ -41,20 +41,23 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-5 text-xs font-semibold uppercase tracking-[0.6px]">
               <a
-                href="#about"
+                href="/about"
                 className="transition-colors hover:text-[color:var(--color-primary-strong)]"
               >
                 About
               </a>
               <a
-                href="#about"
+                href="/about"
                 className="transition-colors hover:text-[color:var(--color-primary-strong)]"
               >
                 Us
               </a>
             </div>
             <div className="flex gap-3 sm:hidden">
-              <Button href="#cta" className="w-full text-xs font-semibold uppercase">
+              <Button
+                href="/about#reserve"
+                className="w-full text-xs font-semibold uppercase"
+              >
                 Reserve your spot
               </Button>
             </div>

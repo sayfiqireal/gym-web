@@ -1,21 +1,21 @@
-import { CommunitySection } from "@/components/sections/CommunitySection";
-import { Footer } from "@/components/sections/Footer";
-import { Hero } from "@/components/sections/Hero";
-import { ProgramsSection } from "@/components/sections/ProgramsSection";
-import { CallToAction } from "@/components/sections/CallToAction";
-import { ValuePropositionSection } from "@/components/sections/ValuePropositionSection";
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { HeroSection } from "@/sections/home/HeroSection";
+import { ProgramsSection } from "@/sections/home/ProgramsSection";
+import { CommunitySection } from "@/sections/home/CommunitySection";
+import { ValuePropositionSection } from "@/sections/home/ValuePropositionSection";
+import { CallToActionSection } from "@/sections/home/CallToActionSection";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-[color:var(--color-surface)]">
       <Navbar />
       <main className="flex flex-1 flex-col gap-4 pb-10">
-        <Hero />
+        <HeroSection />
         <ProgramsSection />
         <CommunitySection />
         <ValuePropositionSection />
-        <CallToAction />
+        <CallToActionSection />
       </main>
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SectionContainer } from "../SectionContainer";
+import { SectionContainer } from "@/components/ui/SectionContainer";
 
 const communityImage =
   "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?auto=format&fit=crop&w=1400&q=80";
@@ -43,7 +43,7 @@ export function ValuePropositionSection() {
           </div>
           <div className="px-5 py-5 sm:px-7">
             <a
-              href="#cta"
+              href="/about#dynamic"
               className="text-xs font-semibold uppercase tracking-[0.6px] text-[color:var(--color-ink)] transition-colors hover:text-[color:var(--color-primary-strong)]"
             >
               View classes

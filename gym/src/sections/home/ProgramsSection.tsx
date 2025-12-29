@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Card } from "../Card";
-import { SectionContainer } from "../SectionContainer";
+import { Card } from "@/components/ui/Card";
+import { SectionContainer } from "@/components/ui/SectionContainer";
 
 const supportImage =
   "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80";

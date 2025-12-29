@@ -1,9 +1,10 @@
-import { Button } from "./Button";
-import { SectionContainer } from "./SectionContainer";
+import Link from "next/link";
+import { Button } from "@/components/ui/Button";
+import { SectionContainer } from "@/components/ui/SectionContainer";
 
 const links = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
 ];
 
 export function Navbar() {
@@ -25,16 +26,16 @@ export function Navbar() {
           <div className="hidden items-center gap-8 md:flex">
             <nav className="flex items-center gap-8 text-xs font-semibold uppercase tracking-[0.6px] text-[color:var(--color-ink)]">
               {links.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   className="transition-colors hover:text-[color:var(--color-primary-strong)]"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
-            <Button href="#cta" className="text-xs font-semibold uppercase">
+            <Button href="/about#reserve" className="text-xs font-semibold uppercase">
               Reserve your spot
             </Button>
           </div>

@@ -1,4 +1,4 @@
-import { SectionContainer } from "../SectionContainer";
+import { SectionContainer } from "@/components/ui/SectionContainer";
 
 export function CommunitySection() {
   return (
