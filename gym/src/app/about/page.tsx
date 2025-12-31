@@ -15,7 +15,6 @@ export default function AboutPage() {
         <PrimalSpaceSection />
         <AboutCallToActionSection />
       </main>
-      <Footer />
     </div>
   );
 }

@@ -35,7 +35,7 @@ export function Navbar() {
                 </Link>
               ))}
             </nav>
-            <Button href="/about#reserve" className="text-xs font-semibold uppercase">
+            <Button href="/reserve" className="text-xs font-semibold uppercase">
               Reserve your spot
             </Button>
           </div>

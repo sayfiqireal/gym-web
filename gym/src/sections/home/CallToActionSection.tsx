@@ -15,7 +15,7 @@ export function CallToActionSection() {
           Join the Primal Tribe Today!
         </h3>
         <Button
-          href="/about#reserve"
+          href="/reserve"
           className="mt-4 bg-white px-5 py-3 text-xs font-semibold uppercase tracking-[0.7px] hover:bg-white/90"
         >
           Reserve your spot

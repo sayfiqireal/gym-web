@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/layout/Footer";
 
 const display = Bebas_Neue({
   weight: "400",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${display.variable} ${body.variable} antialiased`}>
         {children}
       </body>
+      <Footer />
     </html>
   );
 }

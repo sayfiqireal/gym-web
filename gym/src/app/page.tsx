@@ -17,7 +17,6 @@ export default function Home() {
         <ValuePropositionSection />
         <CallToActionSection />
       </main>
-      <Footer />
     </div>
   );
 }

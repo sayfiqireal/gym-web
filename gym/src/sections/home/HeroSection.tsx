@@ -55,7 +55,7 @@ export function HeroSection() {
             </div>
             <div className="flex gap-3 sm:hidden">
               <Button
-                href="/about#reserve"
+                href="/reserve"
                 className="w-full text-xs font-semibold uppercase"
               >
                 Reserve your spot
