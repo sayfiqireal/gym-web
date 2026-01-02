@@ -1,0 +1,10 @@
+# robots.txt for SayGym PrimalTraining
+# This file tells search engines which pages to crawl
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap location
+# Update this URL with your production domain
+Sitemap: https://your-domain.com/sitemap.xml
